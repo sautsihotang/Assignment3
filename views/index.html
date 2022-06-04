@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5">
+    <title>Assigment 3</title>
+</head>
+<body>
+    {{if eq .status_water "aman"}}
+        <div style="background-color: green; width: 200px;">
+            <p style="color: white; text-align: center;">
+                {{.water}} {{.status_water}}
+            </p>
+        </div>
+    {{end}}
+    {{if eq .status_water "siaga"}}
+        <div style="background-color: yellow; width: 200px;">
+            <p style="color: black; text-align: center;">
+                {{.water}} {{.status_water}}
+            </p>
+        </div>
+    {{end}}
+    {{if eq .status_water "bahaya"}}
+        <div style="background-color: red; width: 200px;">
+            <p style="color: white; text-align: center;">
+                {{.water}} {{.status_water}}
+            </p>
+        </div>
+    {{end}}
+
+    <br>
+
+    {{if eq .status_wind "aman"}}
+        <div style="background-color: green; width: 200px;">
+            <p style="color: white; text-align: center;">
+                {{.wind}} {{.status_wind}}
+            </p>
+        </div>
+    {{end}}
+    {{if eq .status_wind "siaga"}}
+        <div style="background-color: yellow; width: 200px;">
+            <p style="color: black; text-align: center;">
+                {{.wind}} {{.status_wind}}
+            </p>
+        </div>
+    {{end}}
+    {{if eq .status_wind "bahaya"}}
+        <div style="background-color: red; width: 200px;">
+            <p style="color: white; text-align: center;">
+                {{.wind}} {{.status_wind}}
+            </p>
+        </div>
+    {{end}}
+</body>
+</html>
